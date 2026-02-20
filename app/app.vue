@@ -21,23 +21,22 @@ useFaviconFromTheme()
 
 const color = computed(() => colorMode.value === 'dark' ? (colors as any)[appConfig.ui.colors.neutral][900] : 'white')
 
+const i18nHead = useLocaleHead({ addSeoAttributes: true })
 
-useHead({
+useHead(() => ({
   meta: [
     { charset: 'utf-8' },
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-    { key: 'theme-color', name: 'theme-color', content: color }
-
+    { key: 'theme-color', name: 'theme-color', content: color },
+    ...(i18nHead.value.meta ?? [])
   ],
   htmlAttrs: {
-    lang: 'en'
+    lang: i18nHead.value.htmlAttrs.lang,
+    dir: i18nHead.value.htmlAttrs.dir
   },
   link: [
-    {
-      rel: 'icon',
-      type: 'image/svg+xml',
-      href: '/icon.svg'
-    }
+    { rel: 'icon', type: 'image/svg+xml', href: '/icon.svg' },
+    ...(i18nHead.value.link ?? [])
   ]
-})
+}))
 </script>

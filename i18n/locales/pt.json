@@ -1,0 +1,30 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre"
+  },
+  "home": {
+    "title": "v.420i",
+    "subtitle": "Template Nuxt 4 com opinião",
+    "tagline": "Mínimo, rápido e amigável para desenvolvedores",
+    "name": "Nome",
+    "namePlaceholder": "Nome",
+    "enter": "Entrar",
+    "toastOops": "Ops!",
+    "toastPleaseName": "Por favor digite seu nome.",
+    "toastHey": "Oi!",
+    "toastClicked": "Olá! Você acabou de clicar no botão."
+  },
+  "about": {
+    "hello": "Olá, {name}!",
+    "description": "v.420i é um template Nuxt com i18n (en, es, pt), feito com foco em minimalismo, performance e experiência do desenvolvedor.",
+    "developedBy": "Desenvolvido com carinho por",
+    "backToHome": "Voltar ao início"
+  },
+  "seo": {
+    "homeTitle": "v.420i | Template Nuxt 4",
+    "homeDescription": "Template Nuxt 4. Mínimo, rápido e amigável para desenvolvedores.",
+    "aboutTitle": "v.420i | Sobre",
+    "aboutDescription": "Sobre este template Nuxt 4. Mínimo, rápido e amigável para desenvolvedores."
+  }
+}
