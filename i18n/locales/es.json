@@ -4,27 +4,27 @@
     "about": "Acerca"
   },
   "home": {
-    "title": "v.420i",
+    "title": "v4.20i",
     "subtitle": "Template para Nuxt 4",
     "tagline": "Simple, rápido y fácil de usar.",
     "name": "Nombre",
     "namePlaceholder": "Nombre",
-    "enter": "Prueba",
+    "enter": "Dar click",
     "toastOops": "Ups!",
     "toastPleaseName": "Por favor escribe tu nombre.",
     "toastHey": "Hola!",
-    "toastClicked": "Hola! Acabas de hacer clic en el botón."
+    "toastClicked": "Hola! Acabas de hacer click en el botón."
   },
   "about": {
     "hello": "Hola, {name}!",
-    "description": "v.420i es un template de Nuxt 4 con el modulo i18n integrado y configurado en los idiomas Español, Inglés y Portugués, centrada en minimalismo, rendimiento y experiencia de desarrollo.",
+    "description": "v4.20i es un template de Nuxt 4 con el modulo i18n integrado y configurado en los idiomas Español, Inglés y Portugués, centrada en minimalismo, rendimiento y experiencia de desarrollo.",
     "developedBy": "Desarrollado con cariño por",
     "backToHome": "Volver al inicio"
   },
   "seo": {
-    "homeTitle": "v.420i | Plantilla Nuxt 4",
+    "homeTitle": "v4.20i | Plantilla Nuxt 4",
     "homeDescription": "Plantilla Nuxt 4. Simple, rápida y fácil de usar.",
-    "aboutTitle": "v.420i | Acerca",
+    "aboutTitle": "v4.20i | Acerca",
     "aboutDescription": "Acerca de esta plantilla Nuxt 4. Simple, rápida y fácil de usar."
   }
 }
