@@ -1,6 +1,6 @@
-![v.420i_cover_image](https://github.com/user-attachments/assets/db3b68fb-4677-4326-96b5-8a24e92a91a4)
+![v4.20i_cover_image](https://github.com/user-attachments/assets/3f3f824e-4974-4b29-bb7a-abf3ed9a9d63)
 
-# v.420i: Nuxt 4 Starter with i18n
+# v4.20i: Nuxt 4 Starter with i18n
 
 Minimal, fast Nuxt 4 boilerplate with **internationalization (i18n)** built in.  
 **Read this in other languages:** [Español (README.es.md)](README.es.md) · [Português (README.pt.md)](README.pt.md) The app supports **three languages** (English, Spanish, Portuguese) using [@nuxtjs/i18n](https://i18n.nuxtjs.org/). Uses the latest Nuxt releases and stays production-ready whether you keep the project small or scale it.
