@@ -1,5 +1,5 @@
 <template>
-  <UApp :toaster="toaster">
+  <UApp :locale="nuxtUiLocale" :toaster="toaster">
     <NuxtLoadingIndicator />
     <NuxtLayout>
       <NuxtPage />
@@ -12,6 +12,8 @@ import colors from 'tailwindcss/colors'
 const appConfig = useAppConfig();
 const colorMode = useColorMode()
 
+const { nuxtUiLocale } = useNuxtUiI18n()
+
 // See documentation here: https://ui.nuxt.com/docs/components/toast#stacked-toasts
 const toaster = { expand: false }
 
@@ -21,8 +23,9 @@ useFaviconFromTheme()
 
 const color = computed(() => colorMode.value === 'dark' ? (colors as any)[appConfig.ui.colors.neutral][900] : 'white')
 
-const i18nHead = useLocaleHead({ addSeoAttributes: true })
+const i18nHead = useLocaleHead({ seo: true })
 
+// Document lang/dir follow Nuxt UI locale (same as UApp); hreflang/meta still from @nuxtjs/i18n.
 useHead(() => ({
   meta: [
     { charset: 'utf-8' },
@@ -31,8 +34,8 @@ useHead(() => ({
     ...(i18nHead.value.meta ?? [])
   ],
   htmlAttrs: {
-    lang: i18nHead.value.htmlAttrs.lang,
-    dir: i18nHead.value.htmlAttrs.dir
+    lang: nuxtUiLocale.value.code,
+    dir: nuxtUiLocale.value.dir
   },
   link: [
     { rel: 'icon', type: 'image/svg+xml', href: '/icon.svg' },

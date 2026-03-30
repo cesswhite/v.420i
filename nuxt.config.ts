@@ -15,6 +15,7 @@ export default defineNuxtConfig({
       { code: 'es', name: 'Español', language: 'es-ES', file: 'es.json' },
       { code: 'pt', name: 'Português', language: 'pt-BR', file: 'pt.json' }
     ],
+    // @ts-expect-error: lazy loading is supported at runtime; module types omit this field in some releases
     lazy: true,
     langDir: 'locales',
     detectBrowserLanguage: {
